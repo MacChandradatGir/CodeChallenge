@@ -1,0 +1,9 @@
+package FridayCodeChallenge;
+
+public class MyObjectCounter {
+	
+	private MyObjectCounter() {
+		
+	}
+
+}

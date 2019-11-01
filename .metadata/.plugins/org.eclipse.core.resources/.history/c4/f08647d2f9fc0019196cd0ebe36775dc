@@ -1,0 +1,33 @@
+package FridayCodeChallenge;
+
+public class ChallengeTest {
+
+	public static void main(String[] args) {
+		String string = "mileseeewlim";
+		boolean isPal = PalindromeValidation.isPalindrome(string);
+		System.out.println("Is " + string + " palindrome? " + isPal);
+
+		MyPrintSpool printSpool1 =  MyPrintSpool.getInstant();
+		MyPrintSpool printSpool2 =  MyPrintSpool.getInstant();
+		
+		System.out.println("Is printSpool1 == printSpool2 ? " + (printSpool1 == printSpool2));
+		System.out.println("printSpool1 System identity hashcode: " + System.identityHashCode(printSpool1));
+		System.out.println("printSpool2 System identity hashcode: " + System.identityHashCode(printSpool2));
+	
+	    int[] array = {2,3,4,5,5,6,7};
+	    IntegerOccurance.getOccurance(array);
+	    
+	    FizzFuzzNumber.isFizzFuzz(15);
+	    FizzFuzzNumber.isFizzFuzz(9);
+	    FizzFuzzNumber.isFizzFuzz(10);
+	    FizzFuzzNumber.isFizzFuzz(23);
+	    
+	    int number = 153;
+	    System.out.println("is " + number + " an Armstrong number? " + ArmstrongValidation.isArmstrongNumber(number));
+	    
+	    
+	
+	
+	}
+
+}

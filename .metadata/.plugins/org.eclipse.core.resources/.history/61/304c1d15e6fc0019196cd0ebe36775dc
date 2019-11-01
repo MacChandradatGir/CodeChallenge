@@ -1,0 +1,8 @@
+package FridayCodeChallenge;
+
+public class PalindromeValidation {
+	public static boolean isPalindrome() {
+		
+	}
+
+}

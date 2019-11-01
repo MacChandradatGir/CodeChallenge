@@ -1,0 +1,17 @@
+package FridayCodeChallenge;
+
+public class MyPrintSpool {
+	
+	private static MyPrintSpool myPrintSpool;
+	
+	private MyPrintSpool() {}
+	
+	public static MyPrintSpool getInstant() {
+		if(myPrintSpool == null) {
+			myPrintSpool = new MyPrintSpool();
+		}
+		return myPrintSpool;
+	}
+	
+
+}

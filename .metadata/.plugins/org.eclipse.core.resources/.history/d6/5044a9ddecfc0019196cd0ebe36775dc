@@ -1,0 +1,19 @@
+package FridayCodeChallenge;
+
+public class PalindromeValidation {
+	public static boolean isPalindrome(String string) {
+		String reverseString="";
+		
+		for(int i = string.length()-1;i >=0; i--) {
+			reverseString = reverseString + string.charAt(i);
+		}
+		if(reverseString.equals(string)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+
+}

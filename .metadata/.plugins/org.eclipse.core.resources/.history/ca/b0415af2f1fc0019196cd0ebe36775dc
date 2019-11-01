@@ -1,0 +1,18 @@
+package FridayCodeChallenge;
+
+public class ChallengeTest {
+
+	public static void main(String[] args) {
+		String string = "mileseeewlim";
+		boolean isPal = PalindromeValidation.isPalindrome(string);
+		System.out.println("Is " + string + " palindrome? " + isPal);
+
+		MyPrintSpool printSpool1 =  MyPrintSpool.getInstant();
+		MyPrintSpool printSpool2 =  MyPrintSpool.getInstant();
+		
+		System.out.println("Is printSpool1 == printSpool2 ? " + (printSpool1 == printSpool2));
+		System.out.println("printSpool1 identity hashcode: " + System.identityHashCode(printSpool1));
+		System.out.println("printSpool2 identity hashcode: " + System.identityHashCode(printSpool2));
+	}
+
+}

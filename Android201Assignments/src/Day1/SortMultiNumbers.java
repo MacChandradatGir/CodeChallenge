@@ -1,0 +1,31 @@
+package Day1;
+
+public class SortMultiNumbers {
+	
+	public static void main(String[] args) {
+		
+		int[] numArray = { 2, 8, 9, 3, 4, 3, 2, 6, 6, 2, 4, 9, 8 };
+		int temp;
+		int num;
+		int index;
+		for(int i = 0; i < numArray.length; i++) {
+			num = numArray[i];
+			index = i;
+			for(int j = i; j < numArray.length; j++) {
+				if(num > numArray[j]) {
+					num = numArray[j];
+					index = j;
+				}
+				
+			}
+			temp = numArray[i];
+			numArray[i] = num;
+			numArray[index] = temp;
+		}
+		
+		for(int number:numArray) {
+			System.out.print(number + ", ");
+		}
+		}
+
+}

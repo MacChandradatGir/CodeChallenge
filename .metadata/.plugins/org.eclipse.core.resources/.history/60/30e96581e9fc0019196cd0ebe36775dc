@@ -1,0 +1,9 @@
+package FridayCodeChallenge;
+
+public class MySingleton {
+	
+	private MySingleton() {
+		
+	}
+
+}

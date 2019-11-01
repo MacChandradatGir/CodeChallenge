@@ -1,0 +1,17 @@
+package FridayCodeChallenge;
+
+public class MyObjectCounter {
+	
+	private static MyObjectCounter myObjectCounter;
+	
+	private MyObjectCounter() {}
+	
+	public static MyObjectCounter getInstant() {
+		if(myObjectCounter == null) {
+			myObjectCounter = new MyObjectCounter();
+		}
+		return myObjectCounter;
+	}
+	
+
+}

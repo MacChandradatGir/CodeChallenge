@@ -1,0 +1,12 @@
+package FridayCodeChallenge;
+
+public class ChallengeTest {
+
+	public static void main(String[] args) {
+		String string = "mileselim";
+		boolean isPal = PalindromeValidation.isPalindrome(string);
+		System.out.println("Is " + string + " palindrome? " + isPal);
+
+	}
+
+}
